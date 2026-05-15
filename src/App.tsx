@@ -10,12 +10,14 @@ import CartPage from './pages/CartPage.tsx';
 import LoginPage from './pages/LoginPage.tsx';
 import HomePage from "./pages/HomePage.tsx";
 
+// Цвета из макета Figma: оранжевый акцент, бежевый фон
 const theme = {
   token: {
-    colorPrimary: '#FF385C',
+    colorPrimary: '#FF6B2B',
     colorBgContainer: '#ffffff',
-    colorBgLayout: '#f7f7f7',
-    borderRadius: 12,
+    colorBgLayout: '#F5F0E8',
+    borderRadius: 8,
+    fontFamily: "'Nunito', 'Segoe UI', sans-serif",
   },
 };
 

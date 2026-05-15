@@ -68,8 +68,7 @@ export default function WeatherWidget() {
       </div>
       <p className="mt-2 capitalize text-sm opacity-95">{data.description}</p>
       <div className="flex justify-between text-xs mt-2 opacity-85">
-        <span>Ощущается: {data.feelsLike}°C</span>
-        <span>Ветер: {data.windSpeed} м/с</span>
+        <span>Ощущается: {data.feelsLike}°C Ветер: {data.windSpeed} м/с</span>
       </div>
     </Card>
   );

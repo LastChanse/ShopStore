@@ -21,32 +21,56 @@ export default function CatalogPage() {
     }
     if (category) result = result.filter(p => p.category === category);
     switch (sort) {
-      case 'price-asc': result.sort((a,b) => a.price - b.price); break;
-      case 'price-desc': result.sort((a,b) => b.price - a.price); break;
-      case 'rating': result.sort((a,b) => b.rating - a.rating); break;
+      case 'price-asc': result.sort((a, b) => a.price - b.price); break;
+      case 'price-desc': result.sort((a, b) => b.price - a.price); break;
+      case 'rating': result.sort((a, b) => b.rating - a.rating); break;
     }
     return result;
   }, [debouncedSearch, category, sort]);
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Каталог товаров</h1>
-      <div className="flex flex-col sm:flex-row gap-4 mb-6">
+      <h1 style={{ fontSize: 24, fontWeight: 800, color: '#1A1A1A', marginBottom: 20 }}>Каталог товаров</h1>
+
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 12,
+          marginBottom: 24,
+          background: '#fff',
+          borderRadius: 12,
+          padding: '16px',
+          border: '1px solid #EDE8DF',
+        }}
+      >
         <Input
           placeholder="Поиск товаров..."
-          prefix={<SearchOutlined className="text-gray-400" />}
+          prefix={<SearchOutlined style={{ color: '#aaa' }} />}
           value={search}
           onChange={e => setSearch(e.target.value)}
-          className="sm:w-72"
+          style={{ width: 280, borderRadius: 8, borderColor: '#E0D8CC' }}
           size="large"
         />
-        <Select value={category} onChange={setCategory} placeholder="Категория" size="large" className="w-40" allowClear>
+        <Select
+          value={category}
+          onChange={setCategory}
+          placeholder="Категория"
+          size="large"
+          style={{ width: 160, borderRadius: 8 }}
+          allowClear
+        >
           <Option value="">Все</Option>
           <Option value="women">Женщины</Option>
           <Option value="men">Мужчины</Option>
           <Option value="kids">Дети</Option>
         </Select>
-        <Select value={sort} onChange={setSort} size="large" className="w-48">
+        <Select
+          value={sort}
+          onChange={setSort}
+          size="large"
+          style={{ width: 200, borderRadius: 8 }}
+        >
           <Option value="default">По умолчанию</Option>
           <Option value="price-asc">Цена: по возрастанию</Option>
           <Option value="price-desc">Цена: по убыванию</Option>
@@ -55,11 +79,11 @@ export default function CatalogPage() {
       </div>
 
       {filtered.length === 0 ? (
-        <Empty description="Товары не найдены" className="mt-10" />
+        <Empty description="Товары не найдены" style={{ marginTop: 40 }} />
       ) : (
         <>
-          <p className="text-gray-500 mb-4">Найдено: {filtered.length}</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <p style={{ color: '#888', marginBottom: 16, fontSize: 14 }}>Найдено: {filtered.length}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
             {filtered.map(p => <ProductCard key={p.id} product={p} />)}
           </div>
         </>
