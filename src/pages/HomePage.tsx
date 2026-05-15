@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
-import { products } from '../../data/products';
-import ProductCard from '../../components/ProductCard/ProductCard';
-import WeatherWidget from '../../components/WeatherWidget/WeatherWidget';
+import { products } from '../data/products.ts';
+import ProductCard from '../components/ProductCard.tsx';
+import WeatherWidget from '../components/WeatherWidget.tsx';
 
 const categories = [
   { key: '', label: 'Все' },

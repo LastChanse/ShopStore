@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useDebounce } from '../../hooks/useDebounce';
+import { useDebounce } from '../hooks/useDebounce.ts';
 import './SearchBar.css';
 
 interface Props {

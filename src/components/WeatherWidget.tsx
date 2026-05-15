@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Card } from 'antd';
-import { fetchWeather } from '../../api/weatherApi';
-import type {WeatherData} from '../../api/weatherApi';
+import { fetchWeather } from '../api/weatherApi.ts';
+import type {WeatherData} from '../api/weatherApi.ts';
 
 const FALLBACK_WEATHER: WeatherData = {
   city: 'Москва',

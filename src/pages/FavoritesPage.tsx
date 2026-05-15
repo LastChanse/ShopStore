@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Button, Empty } from 'antd';
-import { products } from '../../data/products';
-import { useCart } from '../../contexts/CartContext';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import { products } from '../data/products.ts';
+import { useCart } from '../contexts/CartContext.tsx';
+import ProductCard from '../components/ProductCard.tsx';
 
 export default function FavoritesPage() {
   const { favorites } = useCart();

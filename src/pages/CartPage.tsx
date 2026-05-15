@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button, Empty } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
-import { useCart } from '../../contexts/CartContext';
+import { useCart } from '../contexts/CartContext.tsx';
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, cartTotal } = useCart();

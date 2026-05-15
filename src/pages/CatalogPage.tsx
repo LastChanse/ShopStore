@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react';
 import { Input, Select, Empty } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import { products } from '../../data/products';
-import ProductCard from '../../components/ProductCard/ProductCard';
-import { useDebounce } from '../../hooks/useDebounce';
+import { products } from '../data/products.ts';
+import ProductCard from '../components/ProductCard.tsx';
+import { useDebounce } from '../hooks/useDebounce.ts';
 
 const { Option } = Select;
 

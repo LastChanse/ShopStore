@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button, message } from 'antd';
 import { HeartOutlined, HeartFilled } from '@ant-design/icons';
-import { products } from '../../data/products';
-import { useCart } from '../../contexts/CartContext';
+import { products } from '../data/products.ts';
+import { useCart } from '../contexts/CartContext.tsx';
 
 export default function ProductPage() {
   const { id } = useParams();

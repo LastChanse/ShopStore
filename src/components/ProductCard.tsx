@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import { HeartOutlined, HeartFilled } from '@ant-design/icons';
-import { useCart } from '../../contexts/CartContext';
-import type { Product } from '../../data/products';
+import { useCart } from '../contexts/CartContext.tsx';
+import type { Product } from '../data/products.ts';
 
 export default function ProductCard({ product }: { product: Product }) {
   const { toggleFavorite, isFavorite } = useCart();

@@ -2,13 +2,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import { AuthProvider } from './contexts/AuthContext';
 import { CartProvider } from './contexts/CartContext';
-import AppLayout from './components/AppLayout/AppLayout';
-import CatalogPage from './pages/CatalogPage/CatalogPage';
-import ProductPage from './pages/ProductPage/ProductPage';
-import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
-import CartPage from './pages/CartPage/CartPage';
-import LoginPage from './pages/LoginPage/LoginPage';
-import HomePage from "./pages/HomePage/HomePage.tsx";
+import AppLayout from './components/AppLayout.tsx';
+import CatalogPage from './pages/CatalogPage.tsx';
+import ProductPage from './pages/ProductPage.tsx';
+import FavoritesPage from './pages/FavoritesPage.tsx';
+import CartPage from './pages/CartPage.tsx';
+import LoginPage from './pages/LoginPage.tsx';
+import HomePage from "./pages/HomePage.tsx";
 
 const theme = {
   token: {

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { Layout } from 'antd';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from './Header.tsx';
+import Footer from './Footer.tsx';
 
 const { Content } = Layout;
 

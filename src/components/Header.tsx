@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Badge, Dropdown, Space } from 'antd';
 import { HeartOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
-import { useAuth } from '../../contexts/AuthContext';
-import { useCart } from '../../contexts/CartContext';
-import AuthModal from '../AuthModal/AuthModal';
+import { useAuth } from '../contexts/AuthContext.tsx';
+import { useCart } from '../contexts/CartContext.tsx';
+import AuthModal from './AuthModal.tsx';
 
 export default function Header() {
   const [modalOpen, setModalOpen] = useState(false);

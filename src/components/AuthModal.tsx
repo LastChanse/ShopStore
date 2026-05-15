@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Modal, Form, Input, Button, Typography } from 'antd';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext.tsx';
 
 const { Text } = Typography;
 
