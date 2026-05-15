@@ -1,0 +1,43 @@
+.home-page__promo {
+  margin-bottom: 2rem;
+}
+.home-page__slide {
+  border-radius: 12px;
+  padding: 2rem;
+  color: #333;
+}
+.home-page__content {
+  display: flex;
+  gap: 2rem;
+}
+.home-page__sidebar {
+  width: 250px;
+}
+.home-page__categories button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.home-page__categories button.active {
+  background: var(--primary-color);
+  color: white;
+}
+.home-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.home-page__more {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+}

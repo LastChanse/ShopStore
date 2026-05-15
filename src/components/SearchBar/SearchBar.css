@@ -1,0 +1,18 @@
+.search-bar {
+  position: relative;
+  display: inline-block;
+}
+.search-bar__input {
+  padding: 0.7rem 1rem 0.7rem 2.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  width: 280px;
+  font-size: 1rem;
+}
+.search-bar__icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}

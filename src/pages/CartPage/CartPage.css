@@ -1,0 +1,131 @@
+.cart-page__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cart-page__empty {
+  text-align: center;
+  padding: 4rem;
+}
+
+.cart-page__continue-shopping {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.cart-page__content {
+  display: flex;
+  gap: 2rem;
+}
+
+.cart-page__items {
+  flex: 2;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cart-item__image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-item__info {
+  flex: 1;
+}
+
+.cart-item__name {
+  margin: 0 0 0.3rem;
+}
+
+.cart-item__variant {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.cart-item__price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.cart-item__quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-item__quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  background: white;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-item__total {
+  font-weight: 700;
+  min-width: 80px;
+  text-align: right;
+}
+
+.cart-item__remove {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-page__summary {
+  flex: 1;
+}
+
+.cart-summary {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 100px;
+}
+
+.cart-summary h3 {
+  margin-bottom: 1rem;
+}
+
+.cart-summary__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.cart-summary__checkout {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
